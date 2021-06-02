@@ -1,4 +1,4 @@
-import {TokenTypes, Token} from 'lang/lexer';
+import {TokenTypes, Token} from '@packages/lexer';
 /*
 
 # Grammer
@@ -223,4 +223,3 @@ export class Parser {
     return result;
   }
 }
-

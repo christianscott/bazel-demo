@@ -1,9 +1,17 @@
 {
-  "name": "bazel-demo",
-  "license": "MIT",
+  "name": "nodejs_binaries",
+  "version": "0.1.0",
+  "private": true,
   "devDependencies": {
-    "@bazel/bazel": "^0.25.1",
-    "@bazel/typescript": "0.29.0",
-    "typescript": "^3.1.6"
+    "@bazel/bazelisk": "latest",
+    "@bazel/buildifier": "latest",
+    "@bazel/ibazel": "latest",
+    "@bazel/typescript": "^3.5.0",
+    "@types/node": "^15.6.0",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "build": "bazel build //...",
+    "test": "bazel test //..."
   }
 }

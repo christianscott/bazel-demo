@@ -1,10 +1,28 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
+    "declaration": true,
+    "declarationMap": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "noErrorTruncation": true,
     "strict": true,
-    "noImplicitAny": false
+    "noImplicitAny": false, // >:(
+
+    "paths": {
+      "@packages/*": [
+        "./packages/*",
+        "../../bazel-out/host/bin/pkgs/*",
+        "../../bazel-out/darwin-fastbuild/bin/pkgs/*",
+        "../../bazel-out/k8-fastbuild/bin/pkgs/*",
+        "../../bazel-out/x64_windows-fastbuild/bin/pkgs/*",
+        "../../bazel-out/darwin-dbg/bin/pkgs/*",
+        "../../bazel-out/k8-dbg/bin/pkgs/*",
+        "../../bazel-out/x64_windows-dbg/bin/pkgs/*"
+      ]
+    }
   },
-  "bazelOptions": {
-    "workspaceName": ""
-  }
+
+  "exclude": ["node_modules/*"]
 }

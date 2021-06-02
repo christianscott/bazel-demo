@@ -2,7 +2,7 @@
  * Mini-programming language.
  * Turing complete so it'll rule the world!
  */
-import {AST, BinOp, Num, If, While, Assignment, UnaryOp, Print, Identifier} from 'lang/parser';
+import {AST, BinOp, Num, If, While, Assignment, UnaryOp, Print, Identifier} from '@packages/parser';
 
 export class Interpreter {
   private symbolTable: {[key: string]: Identifier} = {};
@@ -93,4 +93,3 @@ export class Interpreter {
     }
   }
 }
-
