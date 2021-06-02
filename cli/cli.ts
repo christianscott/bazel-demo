@@ -1,6 +1,6 @@
-import {Lexer} from '@packages/lexer';
-import {Parser} from '@packages/parser';
-import {Interpreter} from '@packages/interpreter';
+import {Lexer} from 'lang/lexer';
+import {Parser} from 'lang/parser';
+import {Interpreter} from 'lang/interpreter';
 
 const program = `
 foo = 43;

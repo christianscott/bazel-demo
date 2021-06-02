@@ -8,10 +8,10 @@
     "moduleResolution": "Node",
     "noErrorTruncation": true,
     "strict": true,
-    "noImplicitAny": false, // >:(
+    "noImplicitAny": false,
 
     "paths": {
-      "@packages/*": [
+      "lang/*": [
         "./packages/*",
       ]
     }

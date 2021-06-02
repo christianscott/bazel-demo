@@ -2,9 +2,9 @@ load("@build_bazel_rules_nodejs//:index.bzl", "js_library")
 load("@npm//@bazel/typescript:index.bzl", "ts_project")
 
 ts_project(
-    name = "parser_ts",
+    name = "interpreter_ts",
     srcs = [":index.ts"],
-    deps = ["//packages/lexer:lib"],
+    deps = ["//lang/parser:lib"],
     tsconfig = "//:tsconfig.json",
     declaration = True,
     declaration_map = True,
@@ -12,7 +12,7 @@ ts_project(
 
 js_library(
     name = "lib",
-    package_name = "@packages/parser",
-    deps = [":parser_ts"],
+    package_name = "lang/interpreter",
+    deps = [":interpreter_ts"],
     visibility = ["//:__subpackages__"]
 )
