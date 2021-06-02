@@ -13,13 +13,6 @@
     "paths": {
       "@packages/*": [
         "./packages/*",
-        "../../bazel-out/host/bin/pkgs/*",
-        "../../bazel-out/darwin-fastbuild/bin/pkgs/*",
-        "../../bazel-out/k8-fastbuild/bin/pkgs/*",
-        "../../bazel-out/x64_windows-fastbuild/bin/pkgs/*",
-        "../../bazel-out/darwin-dbg/bin/pkgs/*",
-        "../../bazel-out/k8-dbg/bin/pkgs/*",
-        "../../bazel-out/x64_windows-dbg/bin/pkgs/*"
       ]
     }
   },
