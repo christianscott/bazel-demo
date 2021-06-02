@@ -1,7 +1,6 @@
 {
-  "name": "nodejs_binaries",
-  "version": "0.1.0",
-  "private": true,
+  "name": "bazel-demo",
+  "license": "MIT",
   "devDependencies": {
     "@bazel/bazelisk": "latest",
     "@bazel/buildifier": "latest",
